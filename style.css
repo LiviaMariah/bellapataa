@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.topo{
+    background-color: #6C38A8;
+    width: 100%;
+    height: 19.33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.logo{
+    width: 180px;
+    height: 21.17vh;
+    background-image: url(Banners/logo.png);
+    background-size: cover;
+}
+
+
+input[type="text"] {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 13px 12px;
+    border: none;
+    background-color: #ffffff4b;
+    border-radius: 124px;
+    font-size: 15px;
+    border: 2px solid #6C38A8;
+}
+
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]:hover {
+    border: 2px solid white;
+}
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.514);
+}
+
+ul{
+    display: flex;
+    gap: 80px;
+}
+
+.topo li{
+    list-style: none;
+}
+
+.topo a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.subtopo{
+    background-color: #D2AEFC;
+    width: 100%;
+    height: 6.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6C38A8;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.subtopo nav ul {
+    list-style: none;
+}
+
+.topo nav ul li a{
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.topo nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #C9FCAE;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.topo nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.subtopo a {
+    text-decoration: none;
+}
+
+.subtopo nav ul li a:hover {
+    color: #7c54a9;
+}
+
+.banner1{
+    background-image: url(Banners/banner.png);
+    background-size: cover;
+    width: 100%;
+    height: 48.89vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    gap: 200px;
+}
+.botao{
+    padding: 12px 30px;
+    background-color: #C9FCAE;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background-color: #78b956;
+}
+
+.frasemotivadora{
+    background-color: #dddddd8a;
+    backdrop-filter: blur(3px);
+    width: 350px;
+    height: 185px;
+    border-radius: 37px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.496);
+}
+
+.filhofrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.caixafrase {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.caixainvisivel{
+    width: 350px;
+    height: 185px;
+    border-radius: 37px;
+}
+
+.frasemotivadora h2{
+    font-size: 18px;
+}
+
+.paibanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+
+.banners1{
+    width: 234px;
+    height: 165px;
+    background-image: url(Banners/dog\ \(2\).png);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.banners2{
+    width: 234px;
+    height: 165px;
+    background-image: url(Banners/gato\ banner\ \(2\).png);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.banners3{
+    width: 234px;
+    height: 165px;
+    background-image: url(Banners/cachorro\ banner.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.banners4{
+    width: 234px;
+    height: 165px;
+    background-image: url(Banners/gatinho\ \(2\).png);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.itens{
+    margin-left: 120px;
+    margin-bottom: 40px;
+}
+
+.paidestaque{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.destaque1{
+    background-image: url(Banners/banner\ amarel.png);
+    background-size: cover;
+    width: 252px;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0px 10px 10px;
+}
+
+.destaque1 p{
+    margin-left: 17px;
+}
+
+.destaque2{
+    background-image: url(Banners/banner\ azul.png);
+    background-size: cover;
+    width: 252px;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   align-items: end;
+    padding: 10px 0px 10px 10px;
+}
+
+.destaque2 p{
+    margin-left: 10px;
+}
+
+.destaque3{
+    background-image: url(Banners/banner\ roxo.png);
+    background-size: cover;
+    width: 252px;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 10px 10px 10px;
+}
+
+.destaque3 p{
+    margin-left: 13px;
+}
+
+.destaque4{
+    background-image: url(Banners/banner\ gato\ roxo.png);
+    background-size: cover;
+    width: 252px;
+    height: 431px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.botaooutros{
+    padding: 12px 40px;
+    background-color:#f2e79cd3;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.ofertaparacao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.offcao{
+    margin-left: 120px;
+    margin-bottom: 40px;
+}
+
+.produto1{
+    width: 266px;
+    height: 210px;
+    background-color: rgb(124, 124, 124);
+    border-radius: 25px;
+    background-image: url(imagens/racao_para_caes_adultos_gran_plus_choice_frango_e_carne_15kg_545_1_20200319184737.webp);
+    background-size: cover;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+}
+
+.produto2{
+    width: 266px;
+    height: 210px;
+    background-color: rgb(124, 124, 124);
+    border-radius: 25px;
+    background-image: url(imagens/mix-de-frutas-banana-e-maca-petisco-natural-para-caes-e-gatos-caonutri-165924f289e8e1a75f17588969570993-1024-1024.webp);
+    background-size: cover;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+}
+
+.produto3{
+    width: 266px;
+    height: 210px;
+    background-color: rgb(124, 124, 124);
+    border-radius: 25px;
+    background-image: url(imagens/images\ \(6\).jpeg);
+    background-size: cover;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+}
+
+.produto4{
+    width: 266px;
+    height: 210px;
+    background-color: rgb(124, 124, 124);
+    border-radius: 25px;
+    background-image: url(imagens/funny-dog-frango-2-jpg-cxkg3ddpua-ed36374d7585b4923f17606720881829-1024-1024.webp);
+    background-size: cover;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+}
+
+.nomedoproduto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.subnome{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.subnome2{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.444);
+}
+
+.preco{
+    font-weight: 500;
+    color: #448419;
+    font-size: 16px;
+}
+
+.produtogato1{
+    width: 266px;
+    height: 210px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    background-image: url(imagens/images\ \(8\).jpeg);
+    background-size: 215px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+}
+
+.produtogato2{
+    width: 266px;
+    height: 210px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    background-image: url(imagens/petisco_whiskas_anti_bola_de_pelo_para_gatos_10451_1_a5adba3a409e765ef85b39d1486dc246.webp);
+    background-size: 215px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+}
+
+.produtogato3{
+width: 266px;
+    height: 210px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    background-image: url(imagens/images\ \(9\).jpeg);
+    background-size: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+}
+
+.produtogato4{
+    width: 266px;
+    height: 210px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    background-image: url(imagens/0bdcb54d94.webp);
+    background-size: 215px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 8px 25px rgba(158, 215, 255, 0.496);
+    padding-bottom: 100px;
+}
+
+.offcat{
+    margin-left: 120px;
+    margin-bottom: 40px;
+}
+
+.frasesmotivadoras2{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.golden{
+    width: 400px;
+    height: 220px;
+    background-image: url(Banners/banner\ golden.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.peixinho{
+    width: 400px;
+    height: 220px;
+    background-image: url(Banners/peixe\ banner.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.peixinhomotivado{
+    width: 280px;
+    height: max-content;
+    background-color: #dddddd8a;
+    backdrop-filter: blur(3px);
+    font-size: 18px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.goldenmotivado{
+    width: 290px;
+    height: max-content;
+    background-color: #dddddd8a;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.butaogolden{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    border: none;
+    background-color: #fcfaa4d2;
+    font-weight: bold;
+    color: #3F2061;
+    cursor: pointer;
+}
+
+.butaogolden:hover{
+    transform: scaleX(1.05);
+    background: #e7e55ad2;
+}
+
+.marcas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.marca1{
+    width: 200px;
+    height: 200px;
+    background-image: url(Banners/Sem\ Título-1.png);
+    border-radius: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.marca2{
+    width: 200px;
+    height: 200px;
+    background-image: url(Banners/images\ \(1\).png);
+    border-radius: 200px;
+    background-position: center;
+    background-size: cover;
+    border: solid black 1px;
+}
+
+.marca3{
+    width: 200px;
+    height: 200px;
+    background-image: url(Banners/images\ \(2\).jpeg);
+    border-radius: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.marca4{
+    width: 200px;
+    height: 200px;
+    background-image: url(Banners/royal-canin-logo-png_seeklogo-272312.png);
+    border-radius: 200px;
+    background-position: center;
+    background-size: cover;
+    border: solid black 1px;
+
+}
+
+.marca5{
+    width: 200px;
+    height: 200px;
+    background-image: url(Banners/images\ \(1\).jpeg);
+    border-radius: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.sobrenos{
+    padding-top: 100px;
+}
+
+.bannersobre{
+    width: 100%;
+    height: 30.65vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.371)), url(Banners/ChatGPT\ Image\ 25\ de\ set.\ de\ 2026\,\ 09_10_36.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.caixa_sobre {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.textosobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgsobre{
+    background-image: url(Banners/ChatGPT\ Image\ 25\ de\ set.\ de\ 2026\,\ 09_47_11.png);
+    background-size: cover;
+    width: 480px;
+    height: 278px;
+    border-radius: 35px;
+    margin-top: 50px;
+}
+
+.sobrenos2{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.text_sobre2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.caixa_sobre2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contatospai{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.contatos{
+
+}
+
+.teladecadastro{
+    width: 390px;
+    height: 398px;
+    background-color: #d2aefc5c;
+    border-radius: 35px;
+    font-size: 15px;
+    color: #3F2061;
+}
